@@ -21,6 +21,11 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
       - name: Install Dependencies
         run: npm install -f
+      - name: Build
+        run: npm run build
+        env:
+          NODE_ENV: production
+          BABEL_ENV: production
       - name: Publish to npm
         run: npm publish --access public
         env:
