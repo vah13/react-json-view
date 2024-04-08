@@ -32,7 +32,7 @@ jobs:
           with:
             node-version: 17
             registry-url: 'https://registry.npmjs.org'
-        - run: npm install
+        - run: npm --force install
         - run: npm publish
           env:
             NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
