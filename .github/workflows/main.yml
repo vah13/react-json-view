@@ -21,7 +21,7 @@ jobs:
           node-version: '17'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm --force install
 
       - name: Publish to npm
         run: |
