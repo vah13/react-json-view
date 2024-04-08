@@ -1,5 +1,5 @@
 {
-  "name": "@vah13/react-json-view",
+  "name": "@vahagn13/react-json-view",
   "description": "Interactive react component for displaying javascript arrays and JSON objects.",
   "homepage": "https://github.com/vah13/react-json-view",
   "version": "1.0.5",
