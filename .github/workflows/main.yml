@@ -25,6 +25,7 @@ jobs:
 
       - name: Publish to npm
         run: |
+          run: npm login --registry=https://registry.npmjs.org/ --scope=@vahagn13 --always-auth --auth-only
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
