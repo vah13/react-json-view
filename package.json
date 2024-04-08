@@ -2,7 +2,10 @@
   "name": "@vahagn13/react-json-view",
   "description": "Interactive react component for displaying javascript arrays and JSON objects.",
   "homepage": "https://github.com/vah13/react-json-view",
-  "version": "1.0.5",
+  "version": "1.0.6",
+  "files": [
+    "*"
+  ],
   "main": "dist/main.js",
   "author": {
     "name": "Mac Gainor"
@@ -227,10 +230,6 @@
     "webpack-cli": "~3.3.12",
     "webpack-dev-server": "~3.11.2"
   },
-  "files": [
-    "dist",
-    "index.d.ts"
-  ],
   "scripts": {
     "build": "NODE_ENV=production webpack --config webpack/webpack.config.js -p --display-error-details --progress --optimize-minimize",
     "build:demo": "NODE_ENV=production webpack --config webpack/webpack.config-demo.js -p --display-error-details --progress --optimize-minimize",
