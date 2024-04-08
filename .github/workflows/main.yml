@@ -1,4 +1,4 @@
-name: Publish to GitHub Packages
+name: Publish to npm
 
 on:
   push:
@@ -18,10 +18,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '17'
+          registry-url: 'https://registry.npmjs.org/'
       - name: Install Dependencies
         run: npm install -f
-      - name: Publish to GitHub Packages
+      - name: Publish to npm
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-          registry: "https://registry.npmjs.org/"
