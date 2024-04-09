@@ -98,7 +98,7 @@ export default class extends React.PureComponent {
         return (
             <span
                 className="copy-to-clipboard-container"
-                title="Copy to clipboard"
+                title="Set alert"
                 style={{
                     verticalAlign: 'top',
                     display: rowHovered ? 'inline-block' : 'none'
