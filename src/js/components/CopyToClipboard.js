@@ -67,7 +67,7 @@ export default class extends React.PureComponent {
             return (
                 <span>
                     <Clippy class="copy-icon" {...Theme(theme, 'copy-icon')} />
-                    <span {...Theme(theme, 'copy-icon-copied')}>✔</span>
+                    <span {...Theme(theme, 'copy-icon-copied')}><></></span>
                 </span>
             );
         }
